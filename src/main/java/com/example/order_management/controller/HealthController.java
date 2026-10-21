@@ -1,0 +1,19 @@
+package com.example.order_management.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Map;
+
+@RestController
+
+public class HealthController {
+
+    @GetMapping("/api/health")
+    public Map<String,String> health(){
+        return Map.of("Status","UP",
+                "Service","Order-Management");
+    }
+
+}
