@@ -19,7 +19,7 @@ services:
       retries: 10
 
   app:
-    build: .
+    image: ghcr.io/ravisingh101296/order-management:latest
     container_name: oms-api
     restart: unless-stopped
     depends_on:
